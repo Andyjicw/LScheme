@@ -1,5 +1,5 @@
 #lang racket
-#|教程地址:http://deathking.github.io/yast-cn/index.html|#
+#|教程地址:http://deathking.github.io/yast-cn/contents/chapter3.html|#
 
 ;;; 单元和表
 (cons 1 2)
