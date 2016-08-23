@@ -1,5 +1,5 @@
 #lang racket
-#|教程地址:http://deathking.github.io/yast-cn/contents/chapter7.html|#
+#|教程地址->http://deathking.github.io/yast-cn/contents/chapter7.html|#
 ;;; 重复
 
 ;; 递归

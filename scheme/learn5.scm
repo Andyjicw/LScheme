@@ -1,5 +1,5 @@
 #lang racket
-#|教程地址:http://deathking.github.io/yast-cn/contents/chapter6.html|#
+#|教程地址->http://deathking.github.io/yast-cn/contents/chapter6.html|#
 
 ;;; 局部变量
 ;; let表达式 (let ((a 3) (b 2)) (* a b))

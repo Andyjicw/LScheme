@@ -1,5 +1,5 @@
 #lang racket
-#|教程地址:http://deathking.github.io/yast-cn/contents/chapter5.html|#
+#|教程地址->http://deathking.github.io/yast-cn/contents/chapter5.html|#
 
 ;;; 分支
 ;; if表达式 (if predicate then_value else_value)

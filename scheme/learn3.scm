@@ -1,5 +1,5 @@
 #lang racket
-#|教程地址:http://deathking.github.io/yast-cn/contents/chapter4.html|#
+#|教程地址->http://deathking.github.io/yast-cn/contents/chapter4.html|#
 
 ;;; 定义函数
 (define vhello "Hello world")

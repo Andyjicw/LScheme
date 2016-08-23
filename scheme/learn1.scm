@@ -1,5 +1,5 @@
 #lang racket
-#|http://deathking.github.io/yast-cn/contents/chapter2.html|#
+#|教程地址->http://deathking.github.io/yast-cn/contents/chapter2.html|#
 
 ;;; 四种基本算术操作
 (+ 1 2)
