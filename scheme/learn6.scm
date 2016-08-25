@@ -61,6 +61,39 @@
   )
 
 ; 4
+(define (position x ls)
+  (position-aux x ls 0))
+
+(define (position-aux x ls i)
+  (cond
+   ((null? ls) #f)
+   ((eqv? x (car ls)) i)
+   (else (position-aux x (cdr ls) (+ 1 i)))))
+
+;; 尾递归
+
+; 练习2
+; 用尾递归编写下面的函数
+; 用于翻转表元素顺序的my-reverse函数。(reverse函数是预定义函数)
+; 求和由数构成的表。
+; 将一个代表正整数的字符串转化为对应整数。
+; 例如，"1232"会被转化为1232。
+; 不需要检查不合法的输入。
+; 提示，字符到整数的转化是通过将字符#\0……#\9的ASCII减去48，可以使用函数char->integer来获得字符的ASCII码。
+; 函数string->list可以将字符串转化为由字符构成的表。
+; (define (my-reverse ls nls)
+;   (if (null? ls)
+;       ls
+;       (my-reverse (cdr ls) nls)))
+
+(define (my-reverse ls)
+  (my-reverse-rec ls '()))
+
+(define (my-reverse-rec ls0 ls1)
+  (if (null? ls0)
+      ls1
+      (my-reverse-rec (cdr ls0) (cons (car ls0) ls1))))
+
 
 #|
 欢迎指出问题
