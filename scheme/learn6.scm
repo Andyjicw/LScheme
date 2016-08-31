@@ -81,6 +81,7 @@
 ; 不需要检查不合法的输入。
 ; 提示，字符到整数的转化是通过将字符#\0……#\9的ASCII减去48，可以使用函数char->integer来获得字符的ASCII码。
 ; 函数string->list可以将字符串转化为由字符构成的表。
+
 ; (define (my-reverse ls nls)
 ;   (if (null? ls)
 ;       ls
@@ -94,6 +95,13 @@
       ls1
       (my-reverse-rec (cdr ls0) (cons (car ls0) ls1))))
 
+(define (my-sum ls)
+  (my-sum-rec ls 0))
+(define (my-sum-rec ls total)
+  (if (null? ls)
+      total
+      (my-sum-rec (cdr ls) (+ total (car ls))))
+  )
 
 #|
 欢迎指出问题
