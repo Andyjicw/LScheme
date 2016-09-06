@@ -84,6 +84,24 @@
         (reverse ls1)
       (loop (+ 1 i) (cons i ls1)))))
 
+;; letrec
+(define (fact-letrec n)
+  (letrec ((iter (lambda (n1 p)
+           (if (= n1 1)
+               p
+               (let ((m (- n1 1)))
+             (iter m (* p m)))))))     ; *
+    (iter n n)))
+
+;; do表达式
+#|
+(do binds (predicate value)
+    body)
+|#
+(define (fact-do n)
+  (do ((n1 n (- n1 1)) (p n (* p (- n1 1))))
+    ((= n1 1) p))
+  )
 
 #|
 欢迎指出问题
